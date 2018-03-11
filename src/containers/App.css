@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	font-family: 'Montserrat';
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+
+.TodoApp {
+    background-color: #2a3c59;
+    color: #e2ca28;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 70vw;
+	height: 80vh;
+	border: 5px solid #e2ca28;
+}
+
+

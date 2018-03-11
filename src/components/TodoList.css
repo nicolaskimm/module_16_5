@@ -1,0 +1,32 @@
+ul {
+	margin-top: 20px;
+	width: 80%;
+}
+
+li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background-color:#324668;
+	margin: 30px auto;
+	font-size: 20px;
+}
+
+button {
+	background-color: #2a3c59;
+	border: 1px solid #e2ca28;
+	color: #e2ca28;
+	margin: 0 20px;
+	width: 30px;
+	height: 30px;
+}
+
+button:hover {
+	color: red;
+	border-color: red;
+}
+
+
+
+
