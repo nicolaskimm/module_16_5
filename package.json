@@ -24,11 +24,14 @@
     "optimize-js-plugin": "0.0.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "style-loader": "^0.20.3"
+    "react-hot-loader": "^4.0.0",
+    "style-loader": "^0.20.3",
+    "webpack-dev-server": "^2.11.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "webpack-dev-server --inline --hot --config ./webpack.config.js",
+    "build": "NODE_ENV=production webpack"
   },
   "author": "",
   "license": "ISC"
