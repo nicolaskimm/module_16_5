@@ -37,16 +37,19 @@ class App extends React.Component {
 		this.setState({data: remainder});
 	}
 
-	onChange(e) {
-		e.preventDefault();
-		this.setState({text: e.target.value});
+	onKeyUp(e) {
+		const value = e.target.value;
+		if (e.keyCode === 13) {
+			this.addTodo(e.target.value);
+			e.target.value = '';
+		}
 	}
 
 	render() {
 		return (
 			<div className={style.TodoApp}>
 				<Title amount={this.state.data.length} />
-				<TodoForm addTodo={this.addTodo.bind(this)} />
+				<TodoForm onKeyUp={this.onKeyUp.bind(this)} />
 				<TodoList tasks={this.state.data} remove={this.removeTodo.bind(this)} />
 			</div>
 		);
