@@ -5,6 +5,7 @@ import Title from '../components/Title.js';
 import TodoList from '../components/TodoList.js';
 import TodoForm from '../components/TodoForm.js';
 
+
 class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -38,7 +39,6 @@ class App extends React.Component {
 	}
 
 	onKeyUp(e) {
-		const value = e.target.value;
 		if (e.keyCode === 13) {
 			this.addTodo(e.target.value);
 			e.target.value = '';

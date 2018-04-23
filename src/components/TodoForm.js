@@ -10,7 +10,7 @@ const TodoForm = props => {
 				placeholder= "type your task and hit enter"
 			/>
 		</div>
-	)
+	);
 };
 
 export default TodoForm;

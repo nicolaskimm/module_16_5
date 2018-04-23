@@ -6,6 +6,8 @@ const Todo = props => {
 			<p>{task.text}</p>
 			<button onClick={() => props.remove(task.id)}> x </button>
 		</li>
-	)
-}
+	);
+};
+
+export default Todo;
 
